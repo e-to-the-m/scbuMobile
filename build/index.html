@@ -3,42 +3,45 @@
 <!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
 <html class="no-js" lang="en">
-  <!--<![endif]-->
+<!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Middleman</title>
-    <link href="/css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/js/all.js" type="text/javascript"></script>
-
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />  
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="format-detection" content="telephone=no" />
+    <title>Green Mountain Coffee Mobile Site</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
 
     <!-- For iPhone 4 with high-resolution Retina display: -->
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"><!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"><!-- For first-generation iPad: -->
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"><!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"><!-- For nokia devices: -->
     <link rel="shortcut icon" href="img/l/apple-touch-icon.png"><!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
     <meta http-equiv="cleartype" content="on"><!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" type="text/css"><!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 
-    <script src="js/libs/modernizr-2.0.6.min.js" type="text/javascript">
-</script>
+    <link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/forms.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/buttons.css" media="screen" rel="stylesheet" type="text/css" />
+
   </head>
+
   <body class="index">
-    <header id="main">
+
+        <header class="header-main">
+
       <div class="corset top clearfix">
-        <div id="logo"><a href="/">Green Mountain Coffee Roasters</a></div>
+        <div id="logo">
+          <a href="/">Green Mountain Coffee Roasters</a>
+        </div>
+        
         <nav>
-          <a id="cart" href="">Cart</a>
-          <a id="profile" href="">Sign In</a>
+          <a class="btn-cart" href="">Cart</a>
+          <a class="btn-profile" href="">Sign In</a>
         </nav>
       </div> <!-- end corset -->
-    </header>
 
-    <div id="search-box" class="clearfix">
+    </header> <!-- end header-main -->
+
+    <div class="search-box clearfix">
       <div class="corset">
         <form class="std search">
           <fieldset>
@@ -51,81 +54,72 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
+      </div> <!-- end corset -->
+    </div> <!-- end search-box -->
+
+
+    <div class="main-container" role="main">
+      <div class="promo-main">
+  <img src="/img/promos/tullys.png">
+</div>
+    </div>
+
+    <div class="bg-tile-main pre-footer">
+      <div class="corset">
+        <nav class="category-nav">
+	<form class="std">
+	  <fieldset>
+	    <select class="std" name="" id="depts">
+	      <option value="">Shop For &hellip;</option>
+	      <option value="">Phasers</option>
+	      <option value="">Tricorders</option>
+	      <option value="">Communicators</option>
+	    </select>
+	    <select disabled name="" id="categories">
+	      <option value="" selected>Shop For &hellip;</option>
+	      <option value=""></option>
+	      <option value=""></option>
+	      <option value=""></option>
+	    </select>
+	    <button class="btn primary">Go</button>
+	  </fieldset>       
+	</form>
+</nav> <!-- end category-nav -->
+
+        <div class="promo-secondary">
+  <a href="#"><img src="/img/promos/dotw.png"></a>
+</div> <!-- end promo-secondary -->
       </div>
     </div>
 
-    <div id="main" role="main">
+    <footer class="footer-main">
 
-    <div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <a href="http://middlemanapp.com/">Read Online Documentation</a>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <div class="call-us centered serif">
+      Call Us: <a href="callto:8888794627">1-888-879-4627</a>
+  </div>
 
-        <div id="promo-main">
-          <img src="/img/promos/tullys.png">
-        </div>
+  <nav>
+    <ul class="horizontal-list clearfix">
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href=#>Contact</a><li>
+    </ul>
+  </nav>
 
-        <div class="corset">
-          <nav id="nav-main">
-            <form class="std">
-              <fieldset>
-                <select class="std" name="" id="depts">
-                  <option value="">Shop For &hellip;</option>
-                  <option value="">Phasers</option>
-                  <option value="">Tricorders</option>
-                  <option value="">Communicators</option>
-                </select>
-                <select disabled name="" id="categories">
-                  <option value="" selected>Shop For &hellip;</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-                <button>Go</button>
-              </fieldset>       
-            </form>
-          </nav> <!-- end nav-main -->
+  <div class="centered">
+    <span>&reg;2004 - 2012</span>
+    <span>Green Mountain Coffee Roasters, Inc.</span>
+    <span>All rights reserved.</span>
+    <span><a href="">Go to Full Site</a></span>
+  </div> 
 
-        <div id="call-us" class="container-bordered centered">
-          <div class="corset serif">
-            Call Us: <a href="callto:8888794627">1-888-879-4627</a>
-          </div>
-        </div>
-    </div> <!-- end main -->
+</footer> <!-- end footer-main -->
 
-    <footer id="main">
-        <nav>
-          <ul class="horizontal-list clearfix">
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href=#>Contact</a><li>
-          </ul>
-        </nav>
-
-        <div class="centered">
-          <span>&reg;2004 - 2012</span>
-          <span>Green Mountain Coffee Roasters, Inc.</span>
-          <span>All rights reserved.</span>
-          <span><a href="">Go to Full Site</a></span>
-        </div> 
-      </footer>
-
-    <!-- JavaScript at the bottom for fast page loading -->
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
-</script><script type="text/javascript">
-window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
-    </script><!-- scripts concatenated and minified via ant build script-->
-    <script src="js/helper.js" type="text/javascript">
-</script><!-- end scripts-->
-    <!-- Debugger - remove for production -->
-    <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <!-- Livereload script, not for PRD -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
-
-  
-
